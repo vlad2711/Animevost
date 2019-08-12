@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/main"
+            app:startDestination="@id/flowFragment">
+
+    <fragment android:id="@+id/flowFragment" android:name="com.vkram2711.animevost.fragments.FlowFragment"
+              android:label="flow_fragment" tools:layout="@layout/flow_fragment">
+        <action android:id="@+id/action_flowFragment_to_ongoingFragment" app:destination="@id/ongoingFragment"/>
+    </fragment>
+    <fragment android:id="@+id/ongoingFragment" android:name="com.vkram2711.animevost.fragments.OngoingFragment"
+              android:label="OngoingFragment"/>
+</navigation>
